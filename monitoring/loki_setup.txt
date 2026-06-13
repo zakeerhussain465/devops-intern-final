@@ -1,0 +1,19 @@
+Grafana Loki Setup
+
+1. Start Loki
+
+docker run -d --name loki -p 3100:3100 grafana/loki:3.0.0
+
+2. Verify Loki
+
+http://localhost:3100/ready
+
+3. View Logs
+
+docker logs loki
+
+4. Purpose
+
+Loki collects and aggregates logs from applications and containers.
+
+Used together with Grafana for centralized logging and monitoring.
